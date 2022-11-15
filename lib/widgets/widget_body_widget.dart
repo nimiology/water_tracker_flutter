@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import 'progress_bar_widget.dart';
+
 
 class WidgetBody extends StatelessWidget {
   const WidgetBody({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class WidgetBody extends StatelessWidget {
         width: screenSize.width,
         height: screenSize.height * 0.825,
         decoration: BoxDecoration(
-            color: Color.fromRGBO(14, 11, 79, 1),
+            color: const Color.fromRGBO(14, 11, 79, 1),
             boxShadow: [
               BoxShadow(
                 color: Colors.white.withOpacity(0.1),
@@ -25,6 +27,11 @@ class WidgetBody extends StatelessWidget {
             ],
           // border: Border.all(color: Colors.red),
             borderRadius: const BorderRadius.only(topLeft: circularRadius, topRight: circularRadius)
+        ),
+        child: Column(
+          children: [
+            ProgressBar(volume: 50)
+          ],
         ),
     );
   }

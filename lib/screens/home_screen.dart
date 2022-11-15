@@ -15,16 +15,6 @@ class HomeScreen extends StatelessWidget {
           width: screenSize.width,
           height: screenSize.height,
           color: Color.fromRGBO(14, 11, 79, 1),
-          // decoration: const BoxDecoration(
-          //     gradient: LinearGradient(
-          //         colors: [
-          //           Color.fromRGBO(14, 11, 79, 1),
-          //           Color.fromRGBO(99, 83, 118, 1)
-          //         ],
-          //         begin: Alignment.topLeft,
-          //         end: Alignment.bottomRight,
-          //         stops: [0.4, 1.0]
-          //     )),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
