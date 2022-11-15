@@ -12,15 +12,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    const textColor = Color.fromRGBO(228, 228, 248, 1);
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Water Tracker',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           textTheme: TextTheme(
               headline1: GoogleFonts.roboto(
                   fontSize: 27.5,
-                  color: Color.fromRGBO(228, 228, 248, 1),
-                  fontWeight: FontWeight.w500))),
+                  color: textColor,
+                  fontWeight: FontWeight.w500),
+              headline2: GoogleFonts.roboto(
+                  fontSize: 22.5,
+                  color: textColor,
+              fontWeight: FontWeight.w500)
+          ),
+      ),
       home: const HomeScreen(),
     );
   }

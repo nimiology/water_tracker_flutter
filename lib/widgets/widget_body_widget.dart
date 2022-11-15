@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:water_tracker_flutter/widgets/volume_widget.dart';
+import 'dart:ui' as ui;
 
 import 'progress_bar_widget.dart';
 
@@ -30,7 +32,12 @@ class WidgetBody extends StatelessWidget {
         ),
         child: Column(
           children: [
-            ProgressBar(volume: 50)
+            ProgressBar(volume: 50),
+            Volume(),
+            CustomPaint(
+              size: Size(screenSize.width,(screenSize.width*0.5833333333333334).toDouble()),
+              painter: RPSCustomPainter(),
+            ),
           ],
         ),
     );
