@@ -16,17 +16,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Water Tracker',
       theme: ThemeData(
-          primarySwatch: Colors.blue,
-          textTheme: TextTheme(
-              headline1: GoogleFonts.roboto(
-                  fontSize: 27.5,
-                  color: textColor,
-                  fontWeight: FontWeight.w500),
-              headline2: GoogleFonts.roboto(
-                  fontSize: 22.5,
-                  color: textColor,
-              fontWeight: FontWeight.w500)
-          ),
+        primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          headline1: GoogleFonts.roboto(
+              fontSize: 27.5, color: textColor, fontWeight: FontWeight.w500),
+          headline2: GoogleFonts.roboto(
+              fontSize: 22.5, color: textColor, fontWeight: FontWeight.w500),
+          headline5: GoogleFonts.roboto(
+              fontSize: 20, color: textColor, fontWeight: FontWeight.w500),
+          headline6: GoogleFonts.roboto(
+              fontSize: 15, color: textColor, fontWeight: FontWeight.w300),
+        ),
+
       ),
       home: const HomeScreen(),
     );
