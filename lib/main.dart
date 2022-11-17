@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:water_tracker_flutter/screens/home_screen.dart';
+
+import 'screens/home_screen.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Color.fromRGBO(14, 11, 79, 0.8),
+    ),
+  );
   runApp(const MyApp());
 }
 
@@ -27,7 +34,6 @@ class MyApp extends StatelessWidget {
           headline6: GoogleFonts.roboto(
               fontSize: 15, color: textColor, fontWeight: FontWeight.w300),
         ),
-
       ),
       home: const HomeScreen(),
     );
