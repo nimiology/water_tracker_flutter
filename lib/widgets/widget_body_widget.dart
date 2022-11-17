@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:water_tracker_flutter/widgets/volume_widget.dart';
 
+import 'add_water_tracker_widget.dart';
+import 'bottom_navigate_widget.dart';
 import 'progress_bar_widget.dart';
+import 'volume_widget.dart';
 import 'water_history_list_widget.dart';
 
 
@@ -35,6 +37,8 @@ class WidgetBody extends StatelessWidget {
             ProgressBar(volume: 50),
             const Volume(),
             const WaterHistoryList(),
+            const AddWaterTracker(),
+            MyContainer()
           ],
         ),
     );

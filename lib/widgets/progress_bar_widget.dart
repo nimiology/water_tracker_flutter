@@ -21,7 +21,7 @@ class ProgressBar extends StatelessWidget {
           decoration: BoxDecoration(
               gradient: const LinearGradient(colors: [
                 Color.fromRGBO(94, 68, 187, 1),
-                Color.fromRGBO(210, 187, 244, 1),
+                Color.fromRGBO(125,27,170,1),
               ]),
               borderRadius: BorderRadius.circular(100)),
         ),
