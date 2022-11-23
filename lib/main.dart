@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'screens/chart_screen.dart';
 import 'screens/home_screen.dart';
 
 void main() {

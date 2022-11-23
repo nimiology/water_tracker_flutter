@@ -8,8 +8,8 @@ import 'volume_widget.dart';
 import 'water_history_list_widget.dart';
 
 
-class WidgetBody extends StatelessWidget {
-  const WidgetBody({Key? key}) : super(key: key);
+class HomeScreenWidgetBody extends StatelessWidget {
+  const HomeScreenWidgetBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
